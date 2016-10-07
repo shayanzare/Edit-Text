@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>new-512.png</file>
+        <file>Debug External link.ico</file>
+    </qresource>
+</RCC>

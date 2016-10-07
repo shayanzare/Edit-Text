@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>File/Image-And-Icon/HACKER-128.png</file>
+        <file>File/Image-And-Icon/Backgrounde.png</file>
+        <file>File/Image-And-Icon/information.png</file>
+        <file>File/Image-And-Icon/save.png</file>
+        <file>File/Image-And-Icon/settings.png</file>
+        <file>File/Image-And-Icon/view.png</file>
+        <file>File/Image-And-Icon/website.png</file>
+        <file>File/Image-And-Icon/about.png</file>
+        <file>File/Image-And-Icon/add.png</file>
+        <file>File/Image-And-Icon/clear.png</file>
+        <file>File/Image-And-Icon/delete.png</file>
+        <file>File/Image-And-Icon/edit.png</file>
+        <file>File/Image-And-Icon/folder_2_open-512.png</file>
+        <file>File/Image-And-Icon/Save-icon.png</file>
+        <file>File/Image-And-Icon/thin-0255_paste_clipboard-512.png</file>
+        <file>File/Image-And-Icon/scissor-512.png</file>
+        <file>File/Image-And-Icon/icon-ios7-undo-512.png</file>
+        <file>File/Image-And-Icon/copy-copy-icon-75335.png</file>
+        <file>File/Image-And-Icon/23654.png</file>
+        <file>File/Image-And-Icon/settings-icon.png</file>
+    </qresource>
+</RCC>

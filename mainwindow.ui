@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Editor_Text</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="file.qrc">
+    <normaloff>:/image/File/Image-And-Icon/HACKER-128.png</normaloff>:/image/File/Image-And-Icon/HACKER-128.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QToolBar{
+background:rgb(0, 255, 255);
+}
+QTextEdit{
+
+text-shadow:1px 1px 4px rgba(16,154,181,1);font-weight:normal;color:#000000;letter-spacing:1pt;word-spacing:2pt;font-size:15px;text-align:left;font-family:lucida sans unicode, lucida grande, sans-serif;line-height:1;
+
+
+}
+QStatusBar{
+background:rgb(85, 255, 255)
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'lucida sans unicode,lucida grande,sans-serif'; font-size:15px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Monospace'; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCopy"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionPaste"/>
+    <addaction name="action_localhost"/>
+    <addaction name="separator"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>HTML</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>کار با متن ها</string>
+     </property>
+     <addaction name="action_4"/>
+     <addaction name="action_5"/>
+     <addaction name="action"/>
+     <addaction name="action_15"/>
+     <addaction name="action_16"/>
+    </widget>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>فونت ها</string>
+     </property>
+     <addaction name="action_6"/>
+     <addaction name="action_2"/>
+    </widget>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>کارکتر های خاص</string>
+     </property>
+     <addaction name="action_3"/>
+     <addaction name="action_8"/>
+     <addaction name="action_9"/>
+     <addaction name="action_10"/>
+     <addaction name="action_11"/>
+     <addaction name="action_12"/>
+     <addaction name="action_13"/>
+    </widget>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>فورم ها</string>
+     </property>
+     <addaction name="action_20"/>
+     <addaction name="action_18"/>
+     <addaction name="action_19"/>
+     <addaction name="action_21"/>
+    </widget>
+    <addaction name="actionFirst_code"/>
+    <addaction name="menu"/>
+    <addaction name="menu_2"/>
+    <addaction name="menu_3"/>
+    <addaction name="menu_4"/>
+    <addaction name="separator"/>
+    <addaction name="actionBackground_color"/>
+    <addaction name="action_14"/>
+    <addaction name="action_7"/>
+    <addaction name="action_22"/>
+   </widget>
+   <widget class="QMenu" name="menuPhp">
+    <property name="title">
+     <string>PHP</string>
+    </property>
+    <addaction name="actionIp_Logger"/>
+    <addaction name="actionDownload_File"/>
+    <addaction name="action_24"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="action_23"/>
+    <addaction name="action_17"/>
+   </widget>
+   <widget class="QMenu" name="menuCss">
+    <property name="title">
+     <string>CSS</string>
+    </property>
+    <addaction name="action_25"/>
+    <addaction name="action_26"/>
+    <addaction name="action_27"/>
+   </widget>
+   <widget class="QMenu" name="menuTools_2">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionHex_Color"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuTools_2"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuCss"/>
+   <addaction name="menuPhp"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionSave_As"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionPaste"/>
+   <addaction name="actionCut"/>
+   <addaction name="action_localhost"/>
+   <addaction name="separator"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="file.qrc">
+     <normaloff>:/image/File/Image-And-Icon/add.png</normaloff>:/image/File/Image-And-Icon/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="toolTip">
+    <string>ساخت فایل جدید</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="file.qrc">
+     <normaloff>:/image/File/Image-And-Icon/folder_2_open-512.png</normaloff>:/image/File/Image-And-Icon/folder_2_open-512.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="toolTip">
+    <string>باز کردن فایل</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="file.qrc">
+     <normaloff>:/image/File/Image-And-Icon/save.png</normaloff>:/image/File/Image-And-Icon/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="toolTip">
+    <string>ذخیره</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="file.qrc">
+     <normaloff>:/image/File/Image-And-Icon/copy-copy-icon-75335.png</normaloff>:/image/File/Image-And-Icon/copy-copy-icon-75335.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="toolTip">
+    <string>کپی کردن</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="file.qrc">
+     <normaloff>:/image/File/Image-And-Icon/scissor-512.png</normaloff>:/image/File/Image-And-Icon/scissor-512.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+   <property name="toolTip">
+    <string>بریدن </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="file.qrc">
+     <normaloff>:/image/File/Image-And-Icon/icon-ios7-undo-512.png</normaloff>:/image/File/Image-And-Icon/icon-ios7-undo-512.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="toolTip">
+    <string>برگشتن </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="file.qrc">
+     <normaloff>:/image/File/Image-And-Icon/23654.png</normaloff>:/image/File/Image-And-Icon/23654.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="toolTip">
+    <string>جلو رفتن</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="file.qrc">
+     <normaloff>:/image/File/Image-And-Icon/thin-0255_paste_clipboard-512.png</normaloff>:/image/File/Image-And-Icon/thin-0255_paste_clipboard-512.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="toolTip">
+    <string>چسپاندن</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="file.qrc">
+     <normaloff>:/image/File/Image-And-Icon/Save-icon.png</normaloff>:/image/File/Image-And-Icon/Save-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As</string>
+   </property>
+   <property name="toolTip">
+    <string>ذخیره کردن در...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionBackground_color">
+   <property name="text">
+    <string>Background-color</string>
+   </property>
+  </action>
+  <action name="actionFirst_code">
+   <property name="text">
+    <string>کد های اولیه</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>پر رنگ و بولد</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>زیر خط</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>اندازه</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>رنگ</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>عکس</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>امپرسند</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>علامت کپی رایت </string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>علامت ثبت شده</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>علامت تجاری</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>علامت کوچکتر از</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>علامت بزرگتر از</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="text">
+    <string>علامت خنجر</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="text">
+    <string>ایمیل</string>
+   </property>
+  </action>
+  <action name="actionIp_Logger">
+   <property name="text">
+    <string>Ip Logger</string>
+   </property>
+  </action>
+  <action name="actionDownload_File">
+   <property name="text">
+    <string>Download File</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>ایجاد لنگر</string>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="text">
+    <string>ادرس یک متن</string>
+   </property>
+  </action>
+  <action name="action_16">
+   <property name="text">
+    <string>ایجاد نقل قول</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="text">
+    <string>ایجاد دکمه</string>
+   </property>
+  </action>
+  <action name="action_19">
+   <property name="text">
+    <string>تقسیم فضا</string>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="text">
+    <string>ایجاد فورم</string>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="text">
+    <string>ایجاد خط از عرض</string>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="text">
+    <string>اتباط با فایل بیرونی</string>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>درباره</string>
+   </property>
+  </action>
+  <action name="action_24">
+   <property name="text">
+    <string>تولید اعداد تصادفی</string>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="text">
+    <string>سایه دار کردن</string>
+   </property>
+  </action>
+  <action name="action_26">
+   <property name="text">
+    <string>بازتاب متن</string>
+   </property>
+  </action>
+  <action name="action_27">
+   <property name="text">
+    <string>کد لودینگ</string>
+   </property>
+  </action>
+  <action name="actionHex_Color">
+   <property name="icon">
+    <iconset resource="file.qrc">
+     <normaloff>:/image/File/Image-And-Icon/settings-icon.png</normaloff>:/image/File/Image-And-Icon/settings-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hex Color</string>
+   </property>
+  </action>
+  <action name="action_17">
+   <property name="text">
+    <string>کانال ما</string>
+   </property>
+  </action>
+  <action name="action_localhost">
+   <property name="icon">
+    <iconset resource="file.qrc">
+     <normaloff>:/image/File/Image-And-Icon/website.png</normaloff>:/image/File/Image-And-Icon/website.png</iconset>
+   </property>
+   <property name="text">
+    <string>باز کردن localhost</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;بازکردن &lt;span style=&quot; color:#ff0000;&quot;&gt;localhost&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="file.qrc"/>
+ </resources>
+ <connections/>
+</ui>
