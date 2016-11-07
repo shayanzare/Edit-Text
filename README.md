@@ -4,7 +4,7 @@ convenience and functionality we've put into the program.
 
 This is a multi Platform text editor.
 
-![ScreenShot](https://github.com/shayanzare/Edit-Text/raw/master/Screenshot%20(4).png)
+![ScreenShot](http://s9.picofile.com/file/8273812900/Screenshot_4_.png)
 
 #FeedBack
 There were any problems and bugs in the software to my email report me.
